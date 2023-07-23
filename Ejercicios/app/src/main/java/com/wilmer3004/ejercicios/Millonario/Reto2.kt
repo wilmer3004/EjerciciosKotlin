@@ -8,6 +8,9 @@ class Reto2 {
 //Soy todo_ un adivino.
 //No Rectifica las cuentas te daras cuenta que no me equivoco
 fun main(){
+    println("Ingresa la cantidad de veces que deceas que el programa adivine un numero que pienses: ")
+    var n = readln().toInt()
+    for (i in 1..n){
     println("Piensa un numero, ahora sumale 5, luego multiplicalo por 3, y finalmente a ese resultado restale 15 ")
     println("Ingresa el resultado: ")
     var result = readln().toInt()
@@ -16,9 +19,13 @@ fun main(){
     println("Ese es tu numero si o no:")
     var resp= readln()
     when(resp){
-        "si"-> println("Soy todo un adivino")
+        "si"-> {
+            println("Soy todo un adivino")
+        }
+
         "no"->println("Rectifica las cuentas te daras cuenta que no me equivoco")
         else-> println("Tu respuesta fue incorrecta")
     }
 
+}
 }
