@@ -1,10 +1,11 @@
-package com.wilmer3004.ejercicios.Bucles
+package com.wilmer3004.ejercicios.Millonario
 
 class Reto7 {
 }
 fun main(){
     var juego = true
-    while (juego == true){
+    do{
+
         var dado1:Int = (1..6).random()
         var dado2:Int = (1..6).random()
         println("Los dados fueron lanzados el dado #1 cayo ${dado1} y el #2 cayo ${dado2}")
@@ -27,6 +28,6 @@ fun main(){
             println("Usted decidio no jugar mas.")
             juego = false
         }
-    }
+    }while (juego == true)
     println("Gracias por usar nuestro programa")
 }

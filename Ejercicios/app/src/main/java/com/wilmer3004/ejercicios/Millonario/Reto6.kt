@@ -1,4 +1,4 @@
-package com.wilmer3004.ejercicios.Bucles
+package com.wilmer3004.ejercicios.Millonario
 
 class Reto6 {
 }
