@@ -1,12 +1,9 @@
 package com.wilmer3004.ejercicios.Ciclos
 
-class Quiz1 {
+class Quiz4 {
 }
-//    1. programa para jugar ahorcado y ayudarle al usuario a saber si encontro la palabra esconcida "DESARROLLO" definir
-//    cantidad intentos si numero de intentos es igual a 0 perdio si encuentra la palabra gano
-
 fun main(){
-    val word1: Array<String> = arrayOf("d","e","s","a","r","r","o","l","l","o")
+    val word1: MutableList<String> = mutableListOf("d","e","s","a","r","r","o","l","l","o")
     var vidas = 3
     var cont1 = 0
     var cont2 = 0
@@ -42,24 +39,24 @@ fun main(){
         }
         else{
         }
-            for (l in 0..n){
+        for (l in 0..n){
             if(word2[l] == word1[l]) {
-            cont2+=1
+                cont2+=1
             }
             else{
                 cont2-=1
             }
-            }
-            if (cont2 == n+1){
-                println("Felicidades acaba de ganar")
-                vidas = 0
-                break
-            }
+        }
+        if (cont2 == n+1){
+            println("Felicidades acaba de ganar")
+            vidas = 0
+            break
+        }
     }while (vidas>0)
-   if(vidas == 0 && cont2 <n+1){
-       println("Usted acaba de perder")
-   }
-println("Gracias por usar nuestro programa")
+    if(vidas == 0 && cont2 <n+1){
+        println("Usted acaba de perder")
+    }
+    println("Gracias por usar nuestro programa")
 
 }
 
