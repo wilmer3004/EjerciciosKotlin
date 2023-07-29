@@ -3,11 +3,11 @@ package com.wilmer3004.ejercicios.Ciclos
 class Quiz4 {
 }
 fun main(){
-    val word1: MutableList<String> = mutableListOf("d","e","s","a","r","r","o","l","l","o")
+    var word1: MutableList<String> = mutableListOf("d","e","s","a","r","r","o","l","l","o")
     var vidas = 3
     var cont1 = 0
     var cont2 = 0
-    var word2:Array<String> = arrayOf()
+    var word2:MutableList<String> = mutableListOf()
     for (i in word1){
         word2+="_"
     }

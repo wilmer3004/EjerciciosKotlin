@@ -7,7 +7,7 @@ class Quiz3 {
 //    si es si muestra los datos si es no se sale del programa
 fun main(){
     var carga:String = ""
-    var sistema = arrayOf("Nombre: Google maps", "Ubicacion: Escritorio", "Hora: 11:00")
+    val sistema = arrayOf("Nombre: Google maps", "Ubicacion: Escritorio", "Hora: 11:00")
     for (i in 1..10){
         carga=carga+"-"
         println("Descargando: ")
